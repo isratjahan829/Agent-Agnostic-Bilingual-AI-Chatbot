@@ -123,18 +123,6 @@ scripts/               dataset build, index build, evaluation figures, revision 
 tests/                 64 unit tests; fixtures are self-contained
 ```
 
-## Revision experiments
-
-`scripts/reviewer_experiments.py --all` reproduces the analyses added in revision:
-the split-protocol audit (a row-level split puts 93.2% of test items' source
-passages into training; grouping by passage makes it 0%), query-robustness under
-user-style perturbations, the domain-balanced re-evaluation, and the hallucination
-annotation sheets. `--list-blocked` names what needs a GPU, API keys or annotators.
-
-See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for the mapping from each
-paper claim to the code and command that produces it, and
-[`docs/DATASET_CARD.md`](docs/DATASET_CARD.md) for dataset provenance.
-
 ## Limitations
 
 - Answers reflect the regulations that were indexed. Rules change with each
